@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoverX | Premium Protection Solutions</title>
+
+    <link rel="stylesheet" href="cover1.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Cover<span>X</span></div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#products" class="btn-nav">Shop Now</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Premium Covers Designed For Modern Life</h1>
+        <p>
+          Protect your devices with style. Explore CoverX's collection of
+          premium-quality covers crafted for durability and elegance.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#products" class="btn-primary">Explore Collection</a>
+          <a href="#about" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=900&q=80"
+          alt="CoverX Product"
+        />
+      </div>
+    </section>
+
+    <section class="featured" id="products">
+      <div class="section-title">
+        <h2>Featured Covers</h2>
+        <p>Premium protection with premium style.</p>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="image1.png" alt="Leather Shield" />
+            <div class="overlay">
+              <button
+                class="view-btn"
+                onclick="openModal('images/cover1.jpg','Leather Shield')"
+              >
+                View Full Cover
+              </button>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <h3>Premium Rhinestone Collection</h3>
+            <p>₹399</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="image2.png" alt="Carbon Elite" />
+            <div class="overlay">
+              <button
+                class="view-btn"
+                onclick="openModal('images/cover2.jpg','Carbon Elite')"
+              >
+                View Full Cover
+              </button>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <h3>Polycrabonate material</h3>
+            <p>₹99</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="image.png" alt="Crystal Clear" />
+            <div class="overlay">
+              <button
+                class="view-btn"
+                onclick="openModal('images/cover3.jpg','Crystal Clear')"
+              >
+                View Full Cover
+              </button>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <h3>Rhinestone Case</h3>
+            <p>₹399</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Viewer Modal -->
+    <div class="modal" id="imageModal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <img id="modalImage" src="" alt="" />
+
+      <h3 id="modalTitle"></h3>
+    </div>
+
+    <section class="cta">
+      <div class="cta-content">
+        <h2>Upgrade Your Protection Today</h2>
+        <p>
+          Join thousands of satisfied customers who trust CoverX for premium
+          quality and unmatched durability.
+        </p>
+        <a href="#products" class="btn-primary">Shop Collection</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2>Why Choose CoverX?</h2>
+        <p>
+          At CoverX, we combine innovative materials, premium craftsmanship, and
+          modern aesthetics to create covers that not only protect your devices
+          but elevate your style.
+        </p>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-content">
+        <h3>CoverX</h3>
+        <p>Premium Protection Solutions</p>
+        <p>support@coverx.com</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
